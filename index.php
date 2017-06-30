@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?PHP include "config.inc.php"; ?>
 <html lang="en">
 
 <head>
