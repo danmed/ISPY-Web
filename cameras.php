@@ -38,6 +38,7 @@ $date2 = new DateTime('2 days ago');
 $date1 = new DateTime('1 days ago');
 $date = new DateTime('Today');
 $camera = $_GET['cam'];
+$title = $_GET['title'];
 ?>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -51,7 +52,7 @@ $camera = $_GET['cam'];
                 <ul class="nav navbar-nav">
 
 				<li><a href="#">Dates</a></li>
-						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date->format('Y-m-d')?>&cam=<?PHP echo $camera;?>"><?php echo $date->format('d-m-Y')?></a></li>
+						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date->format('Y-m-d')?>&title=<?PHP echo $title; ?>&cam=<?PHP echo $camera;?>"><?php echo $date->format('d-m-Y')?></a></li>
 						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date1->format('Y-m-d')?>&cam=<?PHP echo $camera;?>""><?php echo $date1->format('d-m-Y')?></a></li>
 						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date2->format('Y-m-d')?>&cam=<?PHP echo $camera;?>""><?php echo $date2->format('d-m-Y')?></a></li>
 						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date3->format('Y-m-d')?>&cam=<?PHP echo $camera;?>""><?php echo $date3->format('d-m-Y')?></a></li>
