@@ -95,7 +95,7 @@ $file = $_GET['file'];
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Dan Medhurst 2017</p>
                 </div>
             </div>
         </footer>
