@@ -57,19 +57,16 @@ $date = new DateTime('Today');
             <div class="col-lg-12">
                 <h1 class="page-header">Cameras</h1>
             </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="cameras.php?cam=house&date=<?PHP
-echo $date->format('Y-m-d');
-?>"><img class="img-responsive" src="http://danmed.duckdns.org:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=danmed&pwd=dm312217" width="400" height="300" alt=""></a>
-                
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="cameras.php?cam=garage&date=<?PHP
-echo $date->format('Y-m-d');
-?>"><img class="img-responsive" src="http://danmed.duckdns.org:81/snapshot.cgi?user=danmed&pwd=dm312217" width="400" height="300" alt=""></a>
-                </a>
-            </div>
+<?PHP
+$db_handle = mysqli_connect($DBServer, $DBUser, $DBPassword);
+$db_found  = mysqli_select_db($db_handle, $DBName);
+if ($db_found) {
+    $SQL    = "select * from cameras order by id desc";
+    $result = mysqli_query($db_handle, $SQL);
+    while ($db_field = mysqli_fetch_assoc($result)) {
+        
+           print "<div class='col-lg-3 col-md-4 col-xs-6 thumb'><a class='thumbnail' href='cameras.php?cam=" . $db_field['folder']; . "&date=" . $date->format('Y-m-d') ."'><img class='img-responsive' src='" . $db_field['snapshot'] . "' width='400' height='300' alt=''></a></div>";
+    }
         </div>
 
         <hr>
