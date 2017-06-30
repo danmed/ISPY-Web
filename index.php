@@ -68,6 +68,7 @@ if ($db_found) {
         
            print "<div class='col-lg-3 col-md-4 col-xs-6 thumb'><a class='thumbnail' href='cameras.php?cam=" . $db_field['folder']; . "&date=" . $date->format('Y-m-d') ."'><img class='img-responsive' src='" . $db_field['snapshot'] . "' width='400' height='300' alt=''></a></div>";
     }
+    ?>
         </div>
 
         <hr>
