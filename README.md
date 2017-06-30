@@ -12,8 +12,8 @@ This was created as i don't want to pay ISpy for the privilege of watching recor
 
 # Screenshots
 
-![Alt text](/../screenshots/cameras1.png?raw=true "Main Screen")
+![Alt text](/../screenshots/cameras1.PNG?raw=true "Main Screen")
 
-![Alt text](/../screenshots/cameras2.png?raw=true "Listings")
+![Alt text](/../screenshots/cameras2.PNG?raw=true "Listings")
 
-![Alt text](/../screenshots/cameras3.png?raw=true "Playback")
+![Alt text](/../screenshots/cameras3.PNG?raw=true "Playback")
