@@ -59,9 +59,9 @@ $title = $_GET['title];
 
 				<li><a href="#">Dates</a></li>
 						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date->format('Y-m-d')?>&title=<?PHP echo $title; ?>&cam=<?PHP echo $camera;?>"><?php echo $date->format('d-m-Y')?></a></li>
-						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date1->format('Y-m-d')?&title=<?PHP echo $title; ?>>&cam=<?PHP echo $camera;?>"><?php echo $date1->format('d-m-Y')?></a></li>
-						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date2->format('Y-m-d')?&title=<?PHP echo $title; ?>>&cam=<?PHP echo $camera;?>"><?php echo $date2->format('d-m-Y')?></a></li>
-						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date3->format('Y-m-d')?&title=<?PHP echo $title; ?>>&cam=<?PHP echo $camera;?>"><?php echo $date3->format('d-m-Y')?></a></li>
+						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date1->format('Y-m-d')?>&title=<?PHP echo $title; ?>&cam=<?PHP echo $camera;?>"><?php echo $date1->format('d-m-Y')?></a></li>
+						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date2->format('Y-m-d')?>&title=<?PHP echo $title; ?>&cam=<?PHP echo $camera;?>"><?php echo $date2->format('d-m-Y')?></a></li>
+						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date3->format('Y-m-d')?>&title=<?PHP echo $title; ?>&cam=<?PHP echo $camera;?>"><?php echo $date3->format('d-m-Y')?></a></li>
 						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date4->format('Y-m-d')?>&title=<?PHP echo $title; ?>&cam=<?PHP echo $camera;?>"><?php echo $date4->format('d-m-Y')?></a></li>
 						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date5->format('Y-m-d')?>&title=<?PHP echo $title; ?>&cam=<?PHP echo $camera;?>"><?php echo $date5->format('d-m-Y')?></a></li>
 						<li><a href="<?PHP echo $_SERVER['PHP_SELF'];?>?date=<?php echo $date6->format('Y-m-d')?>&title=<?PHP echo $title; ?>&cam=<?PHP echo $camera;?>"><?php echo $date6->format('d-m-Y')?></a></li>
