@@ -81,7 +81,7 @@ $files =  preg_grep('/^([^.])/', $files);
 ?>
 
             <div class="col-lg-12">
-                <h1 class="page-header"><?PHP echo $title;?> Camera - <?PHP echo $date;?></h1>
+                <h1 class="page-header"><?PHP echo $title;?> - <?PHP echo $date;?></h1>
             </div>
 
 
