@@ -72,17 +72,10 @@ $camera = $_GET['cam'];
 <?php
  
 $date = $_GET['date'];
+$title = $_GET['title'];
 $camera = $_GET['cam'];
+$dir = 'files/video/' . $camera;
 
-if($camera == "house"){
-	$dir='files/video/HOUSECAM';
-	$title='House';
-						}
-						else
-						{
-	$dir='files/video/GARAGECAM';
-	$title='Garage';
-	}
 $files = array_slice(scandir($dir,1), 2);
 $files =  preg_grep('/^([^.])/', $files);
 ?>
