@@ -25,7 +25,7 @@
     <![endif]-->
 
 </head>
-<?PHP 
+<?PHP
 $date = new DateTime('Today');
 ?>
 <body>
@@ -59,11 +59,15 @@ $date = new DateTime('Today');
             </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="cameras.php?cam=house&date=<?PHP echo $date->format('Y-m-d'); ?>"><img class="img-responsive" src="http://danmed.duckdns.org:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=danmed&pwd=dm312217" width="400" height="300" alt=""></a>
+                    <a class="thumbnail" href="cameras.php?cam=house&date=<?PHP
+echo $date->format('Y-m-d');
+?>"><img class="img-responsive" src="http://danmed.duckdns.org:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=danmed&pwd=dm312217" width="400" height="300" alt=""></a>
                 
             </div>
-			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="cameras.php?cam=garage&date=<?PHP echo $date->format('Y-m-d'); ?>"><img class="img-responsive" src="http://danmed.duckdns.org:81/snapshot.cgi?user=danmed&pwd=dm312217" width="400" height="300" alt=""></a>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="cameras.php?cam=garage&date=<?PHP
+echo $date->format('Y-m-d');
+?>"><img class="img-responsive" src="http://danmed.duckdns.org:81/snapshot.cgi?user=danmed&pwd=dm312217" width="400" height="300" alt=""></a>
                 </a>
             </div>
         </div>
