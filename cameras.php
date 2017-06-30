@@ -94,7 +94,7 @@ $thumb = preg_replace('/\\.[^.\\s]{3,4}$/', '', $ind_file);
 $thumbpath = $dir . '/thumbs/' . $thumb . '.jpg';
 ?>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="display.php?title=<?PHP echo $title; ?>&cam=<?PHP echo $cam; ?>&file=<?php echo $dir."/".$ind_file;?>"><img class="img-responsive" src="<?php echo $thumbpath?>" width="400" height="300" alt=""></a><center><?PHP echo $thumb;?>        
+                    <a class="thumbnail" href="display.php?title=<?PHP echo $title; ?>&camera=<?PHP echo $cam; ?>&file=<?php echo $dir."/".$ind_file;?>"><img class="img-responsive" src="<?php echo $thumbpath?>" width="400" height="300" alt=""></a><center><?PHP echo $thumb;?>        
             </div>
 <?php
 }}}
